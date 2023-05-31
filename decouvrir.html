@@ -1,0 +1,486 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Tue May 30 2023 15:46:40 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="6414694f16f5ef0008b2c5eb" data-wf-site="640f7a09b83dd44bcd0e0bd3">
+<head>
+  <meta charset="utf-8">
+  <title>Découvrir</title>
+  <meta content="Découvrir" property="og:title">
+  <meta content="Découvrir" property="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/t10-bonjour-niagara.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Merriweather:300,300italic,400,400italic,700,700italic,900,900italic","Merriweather Sans:regular,500,600,700,800","Raleway:regular,500,600,700,800,900,italic"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+  <script src="https://www.google.com/recaptcha/api.js" type="text/javascript"></script>
+  <script src="https://strapify-script.s3.amazonaws.com/strapify-v1.0.5.js" data-strapi-api-url="https://bonjourniagarastrapi.civiconnect.net" data-apply-webflow-animation-fix="true" type="text/javascript"></script>
+  <style>
+.styledrichtext hr {
+  height: 4px;
+  width: 50px;
+  background-color: #E4BF3A;
+  border: none;
+  margin: 12px 0 16px 0;
+}
+</style>
+  <style>
+.styledrichtexttemplate hr {
+  height: 4px;
+  width: 50px;
+  background-color: #E4BF3A;
+  border: none;
+  margin: 16px 0 24px 0;
+}
+</style>
+  <style>
+.leaflet-popup-content-wrapper {
+    padding: 0 !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+.leaflet-popup-content {
+    margin: 0 !important;
+    z-index: 10 !important;
+}
+.leaflet-popup-content img {
+    width: 100%;
+}
+.leaflet-popup-content .lower-content {
+    padding: 16px !important;
+}
+.leaflet-popup-content .lower-content h3 {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    font-size: 1.25em;
+}
+.leaflet-popup-content .lower-content p {
+    margin: 0;
+    font-size: 0.9em;
+}
+.leaflet-popup-close-button {
+    position: absolute !important;
+    top: 6px !important;
+    right: 6px !important;
+    z-index: 10 !important;
+    color: rgba(0,0,0,0.8) !important;
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    border-radius: 50%;
+    transition: color 0.2s, background-color 0.2s;
+}
+.leaflet-popup-close-button span {
+    font-size: 16px !important;
+    position: relative !important;
+    top: -1px !important;
+    font-weight: bold;
+}
+.leaflet-popup-close-button:hover {
+    color: rgba(0,0,0,1) !important;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+}
+</style>
+</head>
+<body>
+  <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease-in" data-easing2="ease" role="banner" class="navbar w-nav">
+    <div class="menubutton w-nav-button"><img src="images/Big-Menu-Black.png" loading="lazy" width="24" alt=""></div>
+    <a href="index.html" class="w-nav-brand"><img src="images/logo-no-bg.png" loading="lazy" alt=""></a>
+    <nav role="navigation" class="nav-menu w-nav-menu">
+      <a href="index.html" class="nav-link w-nav-link">Accueil</a>
+      <a href="a-voir.html" class="nav-link w-nav-link">À voir</a>
+      <a href="a-faire.html" class="nav-link w-nav-link">À faire</a>
+      <a href="se-loger.html" class="nav-link w-nav-link">Se loger</a>
+      <a href="evenements.html" class="nav-link w-nav-link">Événements</a>
+      <a href="decouvrir.html" aria-current="page" class="nav-link w-nav-link w--current">Découvrir</a>
+      <a href="savourer.html" class="nav-link w-nav-link">Savourer</a>
+    </nav>
+    <a href="search-results.html" class="w-inline-block"><img src="images/Vector.png" loading="lazy" alt=""></a>
+  </div>
+  <div class="header wf-section">
+    <div class="w-container">
+      <h2 class="heading-7">Découvrir</h2>
+      <h4 class="heading-8">Things to do</h4>
+    </div>
+  </div>
+  <div class="div-block-20">
+    <div class="div-block-27">
+      <div id="decouvrir-map" class="map-2 hidden">
+        <div class="div-block-26">
+          <div class="div-block-31"><img src="images/Histoire.png" loading="lazy" alt="" class="image-21">
+            <div class="text-block-16">Histoire</div>
+          </div>
+          <div class="div-block-31"><img src="images/Chemin.png" loading="lazy" alt="" class="image-21">
+            <div class="text-block-16">Chemin de fer clandestin</div>
+          </div>
+        </div>
+        <div class="text-block-15">Map</div>
+      </div>
+    </div>
+    <div data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100" class="tabs-2 w-tabs">
+      <div class="tabs-menu _2 w-tab-menu">
+        <a data-w-tab="Tab 1" class="tab-link-2 histoire w-inline-block w-tab-link w--current">
+          <div class="tabbutton">Histoire</div>
+        </a>
+        <a data-w-tab="Tab 2" class="tab-link-2 canal-welland w-inline-block w-tab-link">
+          <div class="tabbutton">Canal Welland<br></div>
+        </a>
+        <a data-w-tab="Tab 3" class="tab-link-2 cote-sud w-inline-block w-tab-link">
+          <div class="tabbutton">Côte Sud<br></div>
+        </a>
+        <a data-w-tab="Tab 4" class="tab-link-2 chemin-de-fer-clandestin w-inline-block w-tab-link">
+          <div class="tabbutton">Chemin de fer clandestin<br></div>
+        </a>
+      </div>
+      <div class="tabs-content w-tab-content">
+        <div data-w-tab="Tab 1" class="tab-pane-tab-1-2 w-tab-pane w--tab-active">
+          <div class="div-block-32">
+            <div strapi-single-type="decouvrir-info.HistoireDescription" class="styledrichtext _2 w-richtext">
+              <h2>What’s a Rich Text element?</h2>
+              <p>The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.</p>
+              <h4>Static and dynamic content editing</h4>
+              <p>A rich text element can be used with static or dynamic content. For static content, just drop it into any page and begin editing. For dynamic content, add a rich text field to any collection and then connect a rich text element to that field in the settings panel. Voila!</p>
+              <h4>How to customize formatting for each rich text</h4>
+              <p>Headings, paragraphs, blockquotes, figures, images, and figure captions can all be styled after a class is added to the rich text element using the &quot;When inside of&quot; nested selector system.</p>
+            </div>
+            <div strapi-sort="Highlight:desc" strapi-collection="decouvrirs" strapi-filter="[category][$eqi]=Histoire" class="card-div-2">
+              <div strapi-background-image="Image" strapi-template="" class="mainpoicard w-clearfix">
+                <div strapi-class-conditional="Highlight == null, strapify-hide" class="card-icon-div-2 yellowdiv _1">
+                  <p strapi-field="Highlight" class="card-icon-text-3">Niagara&#x27;s Pick</p>
+                </div>
+                <div class="poi-content-div-4 w-clearfix">
+                  <div class="div-block-25"></div>
+                  <h4 strapi-field="Title" class="poi-heading-3">Lieu historique national Fort George</h4>
+                  <p strapi-field="Description" class="carddescription-3">Le lieu historique national du Fort George rappelle les événements de la guerre de 1812. Dans l&#x27;enceinte, vous pouvez découvrir les quartiers des officiers, la salle des gardes et les casernes. Chaque été, le personnel en uniforme d&#x27;époque recrée des activités typiques de la garnison : la vie des colons, des soldats et des artisans. Des visites guidées en français sont organisées tous les joursasdfasdfasdfasdfsefsefasef<br></p>
+                  <div class="div-block-46">
+                    <a strapi-into="WebsiteLink -&gt; href" strapi-class-conditional="WebsiteLink== null, strapify-hide" href="#" target="_blank" class="card-icon-div-2 yellowdiv _2 w-inline-block">
+                      <div class="html-embed-6 w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 512">
+                          <!-- ! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.  -->
+                          <path fill="currentColor" d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"></path>
+                        </svg></div>
+                      <p class="paragraph-18">Website</p>
+                    </a>
+                    <div strapi-into="Address -&gt; data-unique-address" class="showmap">
+                      <div class="html-embed-6 w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512">
+                          <!-- ! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.  -->
+                          <path fill="currentColor" d="M512 96c0 50.2-59.1 125.1-84.6 155c-3.8 4.4-9.4 6.1-14.5 5H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c53 0 96 43 96 96s-43 96-96 96H139.6c8.7-9.9 19.3-22.6 30-36.8c6.3-8.4 12.8-17.6 19-27.2H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320c-53 0-96-43-96-96s43-96 96-96h39.8c-21-31.5-39.8-67.7-39.8-96c0-53 43-96 96-96s96 43 96 96zM117.1 489.1c-3.8 4.3-7.2 8.1-10.1 11.3l-1.8 2-.2-.2c-6 4.6-14.6 4-20-1.8C59.8 473 0 402.5 0 352c0-53 43-96 96-96s96 43 96 96c0 30-21.1 67-43.5 97.9c-10.7 14.7-21.7 28-30.8 38.5l-.6 .7zM128 352a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM416 128a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"></path>
+                        </svg></div>
+                      <p class="paragraph-18">Show on Map</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-w-tab="Tab 2" class="w-tab-pane">
+          <div class="div-block-32">
+            <div strapi-single-type="decouvrir-info.CanalWellandDescription" class="styledrichtext _2 w-richtext">
+              <h2>What’s a Rich Text element?</h2>
+              <p>The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.</p>
+              <h4>Static and dynamic content editing</h4>
+              <p>A rich text element can be used with static or dynamic content. For static content, just drop it into any page and begin editing. For dynamic content, add a rich text field to any collection and then connect a rich text element to that field in the settings panel. Voila!</p>
+              <h4>How to customize formatting for each rich text</h4>
+              <p>Headings, paragraphs, blockquotes, figures, images, and figure captions can all be styled after a class is added to the rich text element using the &quot;When inside of&quot; nested selector system.</p>
+            </div>
+          </div>
+        </div>
+        <div data-w-tab="Tab 3" class="w-tab-pane">
+          <div class="div-block-32">
+            <div data-delay="4000" data-animation="slide" class="slider-2 w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+              <div strapi-single-type-repeatable="decouvrir-info.CoteSudGallery" class="w-slider-mask">
+                <div strapi-template="" class="w-slide"><img strapi-field="CoteSudGallery" loading="eager" src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" alt="" class="image-20"></div>
+              </div>
+              <div class="w-slider-arrow-left">
+                <div class="w-icon-slider-left"></div>
+              </div>
+              <div class="w-slider-arrow-right">
+                <div class="w-icon-slider-right"></div>
+              </div>
+              <div class="w-slider-nav w-round"></div>
+            </div>
+            <div strapi-single-type="decouvrir-info.CoteSudDescription" class="styledrichtext _2 w-richtext">
+              <h2>What’s a Rich Text element?</h2>
+              <p>The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.</p>
+              <h4>Static and dynamic content editing</h4>
+              <p>A rich text element can be used with static or dynamic content. For static content, just drop it into any page and begin editing. For dynamic content, add a rich text field to any collection and then connect a rich text element to that field in the settings panel. Voila!</p>
+              <h4>How to customize formatting for each rich text</h4>
+              <p>Headings, paragraphs, blockquotes, figures, images, and figure captions can all be styled after a class is added to the rich text element using the &quot;When inside of&quot; nested selector system.</p>
+            </div>
+          </div>
+        </div>
+        <div data-w-tab="Tab 4" class="w-tab-pane">
+          <div class="div-block-32">
+            <div strapi-single-type="decouvrir-info.CheminDeFerClandestinDescription" class="styledrichtext _2 w-richtext">
+              <h2>What’s a Rich Text element?</h2>
+              <p>The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.</p>
+              <h4>Static and dynamic content editing</h4>
+              <p>A rich text element can be used with static or dynamic content. For static content, just drop it into any page and begin editing. For dynamic content, add a rich text field to any collection and then connect a rich text element to that field in the settings panel. Voila!</p>
+              <h4>How to customize formatting for each rich text</h4>
+              <p>Headings, paragraphs, blockquotes, figures, images, and figure captions can all be styled after a class is added to the rich text element using the &quot;When inside of&quot; nested selector system.</p>
+            </div>
+            <div strapi-sort="Highlight:desc" strapi-collection="decouvrirs" strapi-filter="[category][$eqi]=Chemin de fer clandestin" class="card-div-2">
+              <div strapi-background-image="Image" strapi-template="" class="mainpoicard w-clearfix">
+                <div strapi-class-conditional="Highlight == null, strapify-hide" class="card-icon-div-2 yellowdiv _1">
+                  <p strapi-field="Highlight" class="card-icon-text-3">Niagara&#x27;s Pick</p>
+                </div>
+                <div class="poi-content-div-4 w-clearfix">
+                  <div class="div-block-25"></div>
+                  <h4 strapi-field="Title" class="poi-heading-3">Lieu historique national Fort George</h4>
+                  <p strapi-field="Description" class="carddescription-3">Le lieu historique national du Fort George rappelle les événements de la guerre de 1812. Dans l&#x27;enceinte, vous pouvez découvrir les quartiers des officiers, la salle des gardes et les casernes. Chaque été, le personnel en uniforme d&#x27;époque recrée des activités typiques de la garnison : la vie des colons, des soldats et des artisans. Des visites guidées en français sont organisées tous les joursasdfasdfasdfasdfsefsefasef<br></p>
+                  <div class="div-block-46">
+                    <a strapi-into="WebsiteLink -&gt; href" strapi-class-conditional="WebsiteLink== null, strapify-hide" href="#" target="_blank" class="card-icon-div-2 yellowdiv _2 w-inline-block">
+                      <div class="html-embed-6 w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 512">
+                          <!-- ! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.  -->
+                          <path fill="currentColor" d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"></path>
+                        </svg></div>
+                      <p class="paragraph-18">Website</p>
+                    </a>
+                    <div strapi-into="Address -&gt; data-unique-address" class="showmap">
+                      <div class="html-embed-6 w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512">
+                          <!-- ! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.  -->
+                          <path fill="currentColor" d="M512 96c0 50.2-59.1 125.1-84.6 155c-3.8 4.4-9.4 6.1-14.5 5H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c53 0 96 43 96 96s-43 96-96 96H139.6c8.7-9.9 19.3-22.6 30-36.8c6.3-8.4 12.8-17.6 19-27.2H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320c-53 0-96-43-96-96s43-96 96-96h39.8c-21-31.5-39.8-67.7-39.8-96c0-53 43-96 96-96s96 43 96 96zM117.1 489.1c-3.8 4.3-7.2 8.1-10.1 11.3l-1.8 2-.2-.2c-6 4.6-14.6 4-20-1.8C59.8 473 0 402.5 0 352c0-53 43-96 96-96s96 43 96 96c0 30-21.1 67-43.5 97.9c-10.7 14.7-21.7 28-30.8 38.5l-.6 .7zM128 352a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM416 128a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"></path>
+                        </svg></div>
+                      <p class="paragraph-18">Show on Map</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="gallery-section wf-section">
+    <div class="w-layout-grid gallery-grid">
+      <a id="w-node-_81954910-c9df-df12-f0ab-07fa182ec96f-182ec96e" href="a-faire.html" class="gallery-section-div-1 w-inline-block">
+        <div class="gallery-dark-div">
+          <h4 id="w-node-_81954910-c9df-df12-f0ab-07fa182ec970-182ec96e" class="gallery-heading gheading-1">À Faire</h4>
+        </div>
+      </a>
+      <a id="w-node-_81954910-c9df-df12-f0ab-07fa182ec972-182ec96e" href="decouvrir.html" aria-current="page" class="gallery-section-div-2 w-inline-block w--current">
+        <div id="w-node-ac35169b-7fbc-4025-433f-258cf038fe5a-182ec96e" class="gallery-dark-div">
+          <h4 id="w-node-_81954910-c9df-df12-f0ab-07fa182ec973-182ec96e" class="gallery-heading gheading-2">Decouvrir</h4>
+        </div>
+      </a>
+      <a id="w-node-_81954910-c9df-df12-f0ab-07fa182ec975-182ec96e" href="savourer.html" class="gallery-section-div-3 w-inline-block">
+        <div id="w-node-ac4e0c8f-45d7-8262-ec9e-65c629327b5e-182ec96e" class="gallery-dark-div">
+          <h4 class="gallery-heading gheading-3">Savourer</h4>
+        </div>
+      </a>
+      <a id="w-node-_81954910-c9df-df12-f0ab-07fa182ec978-182ec96e" href="a-voir.html" class="gallery-section-div-4 w-inline-block">
+        <div class="gallery-dark-div">
+          <h4 class="gallery-heading gheading-4">À Voir</h4>
+        </div>
+      </a>
+      <a id="w-node-_81954910-c9df-df12-f0ab-07fa182ec97b-182ec96e" href="se-loger.html" class="gallery-section-div-5 w-inline-block">
+        <div class="gallery-dark-div">
+          <h4 class="gallery-heading gheading-5">Se Loger</h4>
+        </div>
+      </a>
+    </div>
+  </div>
+  <a id="show-map-button" href="#" class="mobile-map-button w-inline-block">
+    <div class="mobile-map-button">
+      <div class="html-embed-5 w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512">
+          <!-- ! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.  -->
+          <path fill="currentColor" d="M408 120c0 54.6-73.1 151.9-105.2 192c-7.7 9.6-22 9.6-29.6 0C241.1 271.9 168 174.6 168 120C168 53.7 221.7 0 288 0s120 53.7 120 120zm8 80.4c3.5-6.9 6.7-13.8 9.6-20.6c.5-1.2 1-2.5 1.5-3.7l116-46.4C558.9 123.4 576 135 576 152V422.8c0 9.8-6 18.6-15.1 22.3L416 503V200.4zM137.6 138.3c2.4 14.1 7.2 28.3 12.8 41.5c2.9 6.8 6.1 13.7 9.6 20.6V451.8L32.9 502.7C17.1 509 0 497.4 0 480.4V209.6c0-9.8 6-18.6 15.1-22.3l122.6-49zM327.8 332c13.9-17.4 35.7-45.7 56.2-77V504.3L192 449.4V255c20.5 31.3 42.3 59.6 56.2 77c20.5 25.6 59.1 25.6 79.6 0zM288 152a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"></path>
+        </svg></div>
+    </div>
+  </a>
+  <div class="footer-section wf-section">
+    <div class="w-layout-grid grid">
+      <div id="w-node-_71af9582-09c5-111c-75fc-d690f6a99b76-f6a99b74" class="footer-div-1">
+        <div id="w-node-_71af9582-09c5-111c-75fc-d690f6a99b77-f6a99b74" class="footer-headings">Contactez-nous</div>
+        <p strapi-single-type="footer.Phone" class="footer-links">Tel: 1-866-334-3033</p>
+        <p strapi-single-type="footer.Email" class="footer-links">Email: info@bonjourniagara.com</p>
+        <div class="icons-2 w-row">
+          <div class="column w-col w-col-4">
+            <a href="https://www.facebook.com/TourismeFrancoNiagara" target="_blank" class="w-inline-block"><img src="images/MicrosoftTeams-image-4_1MicrosoftTeams-image-4.png" loading="lazy" height="29" alt="" class="image-3"></a>
+          </div>
+          <div class="column-19 w-col w-col-4">
+            <a href="https://www.google.com/search?q=bonjour+niagara&amp;oq=bonjour+niaga&amp;aqs=chrome.0.69i59j69i57j0i390i650l3j69i60l3.2312j1j7&amp;sourceid=chrome&amp;ie=UTF-8" target="_blank" class="w-inline-block"><img src="images/MicrosoftTeams-image-7_1MicrosoftTeams-image-7.png" loading="lazy" height="29" alt="" class="image-11"></a>
+          </div>
+          <div class="column-2 w-col w-col-4">
+            <a href="https://twitter.com/intent/follow?source=followbutton&amp;variant=1.0&amp;screen_name=BonjourNiagara" target="_blank" class="w-inline-block"><img src="images/MicrosoftTeams-image-6_1MicrosoftTeams-image-6.png" loading="lazy" height="29" alt="" class="image-4"></a>
+          </div>
+        </div>
+      </div>
+      <div id="w-node-_71af9582-09c5-111c-75fc-d690f6a99b87-f6a99b74" class="footer-div-2">
+        <div class="footer-headings">Trouve nous</div>
+        <a href="pour-vous-rendre.html" class="w-inline-block">
+          <div class="footer-links">Pour vous Rendre</div>
+        </a>
+        <p strapi-single-type="footer.Address" class="footer-links">Tourisme Franco-Niagara, 300 Lincoln Street, Welland, Ontario L3B 4N4</p>
+      </div>
+      <div id="w-node-_71af9582-09c5-111c-75fc-d690f6a99b8f-f6a99b74" class="footer-div-3">
+        <div id="w-node-_71af9582-09c5-111c-75fc-d690f6a99b90-f6a99b74" class="footer-headings">Pages</div>
+        <a href="faq.html" class="w-inline-block">
+          <div class="footer-links">FAQ</div>
+        </a>
+        <a href="article-listing.html" class="w-inline-block">
+          <div class="footer-links">Articles</div>
+        </a>
+        
+        <a href="contact.html" class="w-inline-block">
+          <div class="footer-links">Contact</div>
+        </a>
+      </div>
+      <div id="w-node-_71af9582-09c5-111c-75fc-d690f6a99b9e-f6a99b74" class="div-block-5 left"><img src="images/white.png" loading="lazy" id="w-node-_71af9582-09c5-111c-75fc-d690f6a99b9f-f6a99b74" alt="" class="image-5"></div>
+      <div id="w-node-_71af9582-09c5-111c-75fc-d690f6a99ba0-f6a99b74" class="div-block-4">
+        <p strapi-single-type="footer.Rights" class="footer-links">All rights reserved © 2007-2023, Tourisme-Franco Niagara. | Privacy | Legal notice Photo credits: Dave Robinson Photography, Christine Hess Photography, Jerry Manco - JLM Studio</p>
+      </div>
+      <div id="w-node-_71af9582-09c5-111c-75fc-d690f6a99ba3-f6a99b74" class="div-block-5 right"><img src="images/province-of-ontario-logo-1.png" loading="lazy" id="w-node-_71af9582-09c5-111c-75fc-d690f6a99ba4-f6a99b74" alt="" class="image-5"></div><img src="images/logo-bonjour-niagara-1.png" loading="lazy" width="450" id="w-node-_71af9582-09c5-111c-75fc-d690f6a99ba5-f6a99b74" srcset="images/logo-bonjour-niagara-1-p-500.png 500w, images/logo-bonjour-niagara-1.png 658w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 57vw, (max-width: 991px) 36vw, 450px" alt="">
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=640f7a09b83dd44bcd0e0bd3" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script><!--  LEAFLET IMPORTS  -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="">
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+  <script>
+ function getParam(name) {
+     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+     var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+     results = regex.exec(location.search);
+     return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+ }
+ var Webflow = Webflow || [];
+ Webflow.push(function () {
+     var tabName = getParam('tab');
+     if (tabName) $('.' + tabName).triggerHandler('click');
+ });
+ </script>
+  <script>
+document.addEventListener("strapifyInitialized", () => {
+const MapIcon = L.Icon.extend({
+	options: {
+		iconSize: [27, 35],
+		iconAnchor: [13, 35],
+		popupAnchor: [0, -35],
+	},
+});
+const getGeoJson = async () => {
+	const response = await fetch(
+		"https://bonjourniagarastrapi.civiconnect.net//uploads/bikeroutes_363231596b.json?updated_at=2023-03-31T15:07:48.925Z"
+	);
+	const data = await response.json();
+	return data;
+};
+const HistoireIcon = new MapIcon({
+  iconUrl:
+    "https://bonjourniagarastrapi.civiconnect.net/uploads/Histoire_405ebad5cd.png?updated_at=2023-04-05T18:24:13.500Z",
+});
+const CheminIcon = new MapIcon({
+  iconUrl:
+    "https://bonjourniagarastrapi.civiconnect.net/uploads/Chemin_fd5db98eb2.png?updated_at=2023-04-05T18:24:13.483Z",
+});
+const bikeRouteIcon = new MapIcon({
+	iconUrl:
+		"https://bonjourniagarastrapi.civiconnect.net/uploads/Frame_345_1aeca3b5aa.png?updated_at=2023-03-31T15:04:14.601Z",
+});
+getGeoJson().then((geoJson) => {
+	L.geoJSON(geoJson.features[17], {
+		style: { color: "green", opacity: "0.9" },
+	}).addTo(map);
+	const [lat, long] = geoJson.features[17].geometry.coordinates[0][0];
+	L.marker([long, lat], { icon: bikeRouteIcon }).addTo(map);
+});
+// long: 43, lat: -79.3, zoom: 10.3
+var map = L.map("decouvrir-map").setView([43.06, -79.19], 9.5);
+L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+	maxZoom: 19,
+	attribution:
+		'&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+}).addTo(map);
+const markers = [];
+const fetchMarkers = async () => {
+	await fetch(
+		"https://bonjourniagarastrapi.civiconnect.net/api/decouvrirs?filters[Category][$eq]=Histoire&populate=*"
+	)
+		.then((response) => response.json())
+		.then((data) => {
+			data.data.forEach(({ attributes, id }) => {
+        console.log(id);
+				const { Title, Location, WebsiteLink, Address, Image } = attributes;
+				console.log(Location.lng);
+				const marker = L.marker([Location.lat, Location.lng], {
+					icon: HistoireIcon,
+				})
+					.addTo(map)
+					.bindPopup(
+						`
+                <img src="https://bonjourniagarastrapi.civiconnect.net${Image.data.attributes.url}" alt="${Title}" />
+                <div class="lower-content">
+                    <a href="${WebsiteLink}" target="_blank">
+                        <h3>${Title}</h3>
+                        <p>${Address}</p>
+                    </a>
+                </div>
+            `
+					);
+				markers.push({ marker: marker, id: id });
+			});
+		});
+	await fetch(
+		"https://bonjourniagarastrapi.civiconnect.net/api/decouvrirs?filters[Category][$eq]=Chemin%20de%20fer%20clandestin&populate=*"
+	)
+		.then((response) => response.json())
+		.then((data) => {
+			data.data.forEach(({ attributes, id }) => {
+        console.log(id);
+				const { Title, Location, WebsiteLink, Address, Image } = attributes;
+				console.log(Location.lng);
+				const marker = L.marker([Location.lat, Location.lng], {
+					icon: CheminIcon,
+				})
+					.addTo(map)
+					.bindPopup(
+						`
+                <img src="https://bonjourniagarastrapi.civiconnect.net${Image.data.attributes.url}" alt="${Title}" />
+                <div class="lower-content">
+                    <a href="${WebsiteLink}" target="_blank">
+                        <h3>${Title}</h3>
+                        <p>${Address}</p>
+                    </a>
+                </div>
+            `
+					);
+				markers.push({ marker: marker, id: id });
+			});
+		});
+};
+fetchMarkers().then(() => {
+	const buttons = document.querySelectorAll("[strapi-template-id]");
+	buttons.forEach((button) => {
+		button.addEventListener("click", () => {
+			const templateID = button.getAttribute("strapi-template-id");
+      console.log("tID", templateID);
+      // cast templateID to number
+      const marker = markers.find(({ id }) => id === Number(templateID));
+      console.log("markers", markers);
+      console.log("marker", marker);
+			map.setView(marker.marker.getLatLng(), 11);
+			map.panTo(marker.marker.getLatLng());
+			if (window.matchMedia("(min-width: 479px)").matches) {
+				marker.marker.openPopup();
+			}
+		});
+	});
+	let pinGroup = L.featureGroup(markers.map(({ marker }) => marker));
+	map.fitBounds(pinGroup.getBounds());
+	const showMapButton = document.getElementById("show-map-button");
+	const mapContainer = document.getElementById("decouvrir-map");
+	if (showMapButton) showMapButton.onclick = () => {
+		mapContainer.classList.toggle("hidden");
+		map.invalidateSize();
+		map.fitBounds(pinGroup.getBounds());
+	};
+});
+});
+</script>
+</body>
+</html>
