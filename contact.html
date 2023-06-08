@@ -176,14 +176,78 @@
 									/>
 								</div>
 							</form>
-							<div class="w-form-done">
+							<div id="form-success" class="form-feedback success">
 								<div>Thank you! Your submission has been received!</div>
 							</div>
-							<div class="w-form-fail">
+							<div id="form-fail" class="form-feedback fail">
 								<div>Oops! Something went wrong while submitting the form.</div>
 							</div>
 						</div>
 					</div>
+					<script>
+						// Function to handle form submission
+						function submitForm(event) {
+							event.preventDefault(); // Prevent the default form submission
+
+							// Get form input values
+							var firstName = document.getElementById("name-2").value;
+							var lastName = document.getElementById("name-3").value;
+							var email = document.getElementById("email-2").value;
+							var message = document.getElementById("field").value;
+
+							// Create form data object
+							var formData = new FormData();
+							formData.append("FirstName", firstName);
+							formData.append("LastName", lastName);
+							formData.append("Email", email);
+							formData.append("Message", message);
+
+							// Send POST request to the endpoint
+
+							fetch(
+								"https://bonjourniagarastrapi.civiconnect.net/api/contact-form-submissions",
+								{
+									method: "POST",
+									headers: {
+										"Content-Type": "application/json",
+									},
+									body: JSON.stringify({
+										data: {
+											FirstName: firstName,
+											LastName: lastName,
+											Email: email,
+											Message: message,
+										},
+									}),
+								}
+							)
+								.then(function (response) {
+									if (response.ok) {
+										// Form submission successful
+										document.getElementById("wf-form-Comments").reset(); // Reset the form
+										document.querySelector(
+											".form-feedback.success"
+										).style.display = "block"; // Show success message
+									} else {
+										// Form submission failed
+										document.querySelector(
+											".form-feedback.fail"
+										).style.display = "block"; // Show error message
+									}
+								})
+								.catch(function (error) {
+									// Error occurred while submitting the form
+									console.log(error);
+									document.querySelector(".form-feedback.fail").style.display =
+										"block"; // Show error message
+								});
+						}
+
+						// Attach form submit event listener
+						document
+							.getElementById("wf-form-Comments")
+							.addEventListener("submit", submitForm);
+					</script>
 					<div
 						strapi-single-type="contactez-nous.Coordonnees"
 						id="w-node-c4db8fc6-dca1-8a79-db3d-8df09ce91fd6-c7f1fef9"
@@ -209,9 +273,7 @@
 								strapi-single-type="contactez-nous.Advertisement"
 								class="adrichtext w-richtext"
 							>
-								<p>
-									
-								</p>
+								<p></p>
 							</div>
 						</div>
 						<img
