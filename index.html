@@ -70,14 +70,52 @@ document.addEventListener("strapifyInitialized", () => {
     <div class="cta-container w-container">
       <h1 class="heading-6">Renseignements Touristiques</h1>
       <p class="paragraph-4">Inscrivez-vous à notre lettre d&#x27;information pour recevoir des mises à jour et des offres extravagantes.</p>
-      <div class="form-block w-form">
-        <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form"><input type="text" class="text-field w-input" maxlength="256" name="field" data-name="Field" placeholder="Email Address" id="field" required=""><input type="submit" value="Join our Mailing List" data-wait="Please wait..." class="submit-button w-button"></form>
-        <div class="w-form-done">
-          <div>Thank you! Your submission has been received!</div>
-        </div>
-        <div class="w-form-fail">
-          <div>Oops! Something went wrong while submitting the form.</div>
-        </div>
+      <div class="form-block">
+        <form id="email-list-form" name="email-form" data-name="Email Form" class="form">
+          <input type="email" class="text-field w-input" maxlength="256" name="Email" data-name="Email" placeholder="Email Address" id="field" required="">
+          <input id="email-list-submit-btn" type="submit" value="Join our Mailing List" data-wait="Please wait..." class="submit-button w-button">
+        </form>
+        <script>
+          const emailListForm = document.getElementById('email-list-form');
+          const emailListSubmitBtn = document.getElementById('email-list-submit-btn');
+
+          // on form submit, send data to strapi at /api/email-list
+          emailListForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const formData = new FormData(emailListForm);
+            const formDataObj = Object.fromEntries(formData);
+            console.log(formDataObj);
+            fetch('https://bonjourniagarastrapi.civiconnect.net/api/email-lists', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({"data": formDataObj})
+            })
+            .then(res => res.json())
+            .then(data => {
+              if (data.error) {
+                // turn submit button red, change text to "Sorry, something went wrong" for 3 seconds
+                emailListSubmitBtn.style.backgroundColor = 'rgb(150, 0, 0)';
+                emailListSubmitBtn.value = "Sorry, something went wrong";
+                setTimeout(() => {
+                  emailListSubmitBtn.style.backgroundColor = '#696b95';
+                  emailListSubmitBtn.value = "Join our Mailing List";
+                }, 3000);
+              } else {
+                // turn submit button green, change text to success message
+                emailListSubmitBtn.style.backgroundColor = 'rgb(0, 150, 0)';
+                emailListSubmitBtn.value = "Thanks for signing up!";
+                // disable submit button
+                emailListSubmitBtn.disabled = true;
+              }
+            })
+            .catch(err => {
+              console.log(err);
+              alert('There was an error signing up. Please try again later.');
+            })
+          })
+        </script>
       </div>
       <a href="#Discover-Niagara" class="w-inline-block"><img src="images/scroll8.gif" loading="lazy" alt="" class="image-8"></a>
     </div>
